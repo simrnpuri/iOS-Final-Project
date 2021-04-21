@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CartItemTableViewCell" customModule="SP_FoodOrders" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM1-PD-GBE">
+                        <rect key="frame" x="16" y="15" width="39" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-6v-bWi">
+                        <rect key="frame" x="186.5" y="8" width="69.5" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBC-Lz-eGP">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.84415298699999997" green="0.1981099248" blue="0.14503455160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="negativeTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ZFh-dM-SNt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyn-5h-ZE4">
+                                <rect key="frame" x="30" y="0.0" width="9.5" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.84415298699999997" green="0.1981099248" blue="0.14503455160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbE-ge-OZH">
+                                <rect key="frame" x="39.5" y="0.0" width="30" height="32"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.84415298699999997" green="0.1981099248" blue="0.14503455160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="positiveTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Qjh-mX-ksI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97592037919999997" green="0.90598243469999995" blue="0.90196007489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a1-t4-hmn">
+                        <rect key="frame" x="264" y="15" width="44" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="aTX-41-hcQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S4Z-6v-bWi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="E0P-0u-Nk3"/>
+                    <constraint firstItem="7a1-t4-hmn" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="K28-8C-g9G"/>
+                    <constraint firstAttribute="bottom" secondItem="S4Z-6v-bWi" secondAttribute="bottom" constant="8" id="Nhf-q7-yS2"/>
+                    <constraint firstItem="7a1-t4-hmn" firstAttribute="leading" secondItem="S4Z-6v-bWi" secondAttribute="trailing" constant="8" id="dbG-66-aQ9"/>
+                    <constraint firstAttribute="trailing" secondItem="7a1-t4-hmn" secondAttribute="trailing" constant="12" id="gk9-KM-Kci"/>
+                    <constraint firstItem="UM1-PD-GBE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="n0z-oj-8BV"/>
+                    <constraint firstItem="UM1-PD-GBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wiA-yU-iug"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="count" destination="oyn-5h-ZE4" id="3ji-Nv-A6q"/>
+                <outlet property="negative" destination="YBC-Lz-eGP" id="eVc-OL-j3q"/>
+                <outlet property="positive" destination="rbE-ge-OZH" id="gYf-Af-8GV"/>
+                <outlet property="title" destination="UM1-PD-GBE" id="CcD-a5-S0y"/>
+                <outlet property="total" destination="7a1-t4-hmn" id="NrZ-0S-yuj"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="59.598214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

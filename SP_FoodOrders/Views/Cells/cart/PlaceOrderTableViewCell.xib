@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlaceOrderTableViewCell" customModule="SP_FoodOrders" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tJK-TM-Gs2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PS-LY-1Vy">
+                                <rect key="frame" x="193" y="2" width="111" height="40"/>
+                                <color key="backgroundColor" red="0.97592037919999997" green="0.90598243469999995" blue="0.90196007489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title=" PLACE ORDER ">
+                                    <color key="titleColor" red="0.84415298699999997" green="0.1981099248" blue="0.14503455160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="placeOrderBtnTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bfs-GX-R9b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4PS-LY-1Vy" firstAttribute="top" secondItem="tJK-TM-Gs2" secondAttribute="top" constant="2" id="6BO-ky-fIN"/>
+                            <constraint firstAttribute="bottom" secondItem="4PS-LY-1Vy" secondAttribute="bottom" constant="2" id="RQO-2E-BYM"/>
+                            <constraint firstAttribute="trailing" secondItem="4PS-LY-1Vy" secondAttribute="trailing" constant="16" id="Z4w-RW-e4y"/>
+                            <constraint firstAttribute="height" constant="44" id="jtN-Xi-MsY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tJK-TM-Gs2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4qn-nG-twK"/>
+                    <constraint firstAttribute="trailing" secondItem="tJK-TM-Gs2" secondAttribute="trailing" id="AMZ-Rb-eGO"/>
+                    <constraint firstItem="tJK-TM-Gs2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DUP-v1-X3r"/>
+                    <constraint firstAttribute="bottom" secondItem="tJK-TM-Gs2" secondAttribute="bottom" id="oNX-3p-sa8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="placeOrderBtn" destination="4PS-LY-1Vy" id="oG2-FA-yWu"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="104"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
